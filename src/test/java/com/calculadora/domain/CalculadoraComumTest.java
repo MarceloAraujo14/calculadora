@@ -63,18 +63,18 @@ class CalculadoraComumTest {
         assertThat(result).isEqualTo(expected);
     }
 
-    @Test
-    void DeveRetornarErroAoDividirPorZero(){
-        //given
-        Double a = 5.0;
-        Double b = 0.0;
-        //when
-        //then
-        assertThatThrownBy(() -> calculadoraComum.dividir(a, b))
-                .isInstanceOf(DivisionByZeroException.class)
-                .hasMessageContaining("Não é possível dividir por zero");
-
-    }
+//    @Test
+//    void DeveRetornarErroAoDividirPorZero(){
+//        //given
+//        Double a = 5.0;
+//        Double b = 0.0;
+//        //when
+//        //then
+//        assertThatThrownBy(() -> calculadoraComum.dividir(a, b))
+//                .isInstanceOf(DivisionByZeroException.class)
+//                .hasMessageContaining("Não é possível dividir por zero");
+//
+//    }
 
 
     @Test
